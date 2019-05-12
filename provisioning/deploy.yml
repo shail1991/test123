@@ -1,0 +1,11 @@
+---
+
+- name: Configuration for Production
+  hosts: all
+  become: yes
+  vars:
+    user_name: "vagrant"
+    group_name: "www-data"
+
+  roles:
+    - python
